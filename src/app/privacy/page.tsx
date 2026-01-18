@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { Metadata } from "next";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "プライバシーポリシー | フリマ利益計算機",
@@ -9,11 +10,11 @@ export const metadata: Metadata = {
 
 export default function PrivacyPolicy() {
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col font-[family-name:var(--font-geist-sans)]">
+    <div className="min-h-screen bg-slate-50 flex flex-col font-[family-name:var(--font-geist-sans)]">
       {/* Header */}
-      <header className="bg-white shadow-sm sticky top-0 z-10">
+      <header className="bg-white/80 backdrop-blur-sm shadow-sm sticky top-0 z-10 transition-all duration-300">
         <div className="max-w-md mx-auto px-4 py-4 flex items-center">
-          <Link href="/" className="text-gray-600 hover:text-gray-900 text-sm flex items-center">
+          <Link href="/" className="text-gray-600 hover:text-gray-900 text-sm flex items-center font-medium transition-colors">
             ← 計算機に戻る
           </Link>
           <h1 className="text-xl font-bold text-gray-800 ml-auto mr-auto">プライバシーポリシー</h1>
@@ -23,7 +24,7 @@ export default function PrivacyPolicy() {
 
       {/* Main Content */}
       <main className="flex-grow p-4 w-full">
-        <div className="max-w-md mx-auto bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 p-6 space-y-6 text-sm text-gray-700 leading-relaxed">
+        <div className="max-w-md mx-auto bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 p-6 md:p-8 space-y-6 text-sm text-gray-700 leading-relaxed">
           
           <section>
             <h2 className="text-lg font-bold text-gray-800 mb-2 border-b pb-1">個人情報の利用目的</h2>
@@ -89,14 +90,7 @@ export default function PrivacyPolicy() {
         </div>
       </main>
 
-      {/* Footer */}
-      <footer className="bg-white border-t border-gray-100 py-6 mt-8">
-        <div className="max-w-md mx-auto px-4 text-center space-y-2">
-          <p className="text-xs text-gray-300">
-            &copy; {new Date().getFullYear()} Flea Market Profit Calculator
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
