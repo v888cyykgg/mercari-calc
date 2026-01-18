@@ -1,4 +1,6 @@
 import Calculator from "@/components/Calculator";
+import SeoContent from "@/components/SeoContent";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -12,18 +14,19 @@ export default function Home() {
 
       {/* Main Content */}
       <main className="flex-grow p-4 w-full">
-        <div className="max-w-md mx-auto space-y-6">
-          <div className="text-center space-y-2">
-            <p className="text-sm text-gray-600">
+        <div className="max-w-md mx-auto space-y-8">
+          <div className="bg-white rounded-2xl shadow-sm p-6 text-center space-y-3">
+            <p className="text-gray-600 leading-relaxed">
               販売価格、仕入れ値、送料を入力するだけで<br />
               利益と利益率を自動計算します。
             </p>
-            <p className="text-xs text-blue-600 bg-blue-50 inline-block px-3 py-1 rounded-full">
-              メルカリ、ラクマ、PayPayフリマの手数料(10%)に対応
+            <p className="text-xs text-rose-500 bg-rose-50 inline-block px-3 py-1 rounded-full font-medium">
+              メルカリ、ラクマ、PayPayフリマの手数料に対応
             </p>
           </div>
 
           <Calculator />
+          <SeoContent />
           
         </div>
       </main>
@@ -35,6 +38,11 @@ export default function Home() {
             ※当ツールは非公式です。各フリマアプリの公式ツールではありません。<br />
             手数料は一律10%で計算しています。
           </p>
+          <div className="pt-2">
+            <Link href="/privacy" className="text-xs text-gray-400 hover:text-gray-600 underline">
+              プライバシーポリシー
+            </Link>
+          </div>
           <p className="text-xs text-gray-300">
             &copy; {new Date().getFullYear()} Flea Market Profit Calculator
           </p>
