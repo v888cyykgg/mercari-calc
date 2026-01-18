@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "プライバシーポリシー | フリマ利益計算機",
-  description: "フリマ利益計算機のプライバシーポリシーページです。個人情報の取り扱い、免責事項について記載しています。",
+  description: "フリマ利益計算機のプライバシーポリシーページです。個人情報の取り扱い、Cookieの使用、免責事項について記載しています。",
 };
 
 export default function PrivacyPolicy() {
@@ -24,68 +24,76 @@ export default function PrivacyPolicy() {
 
       {/* Main Content */}
       <main className="flex-grow p-4 w-full">
-        <div className="max-w-md mx-auto bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 p-6 md:p-8 space-y-6 text-sm text-gray-700 leading-relaxed">
+        <div className="max-w-md mx-auto bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 p-6 md:p-8 space-y-8 text-sm text-gray-700 leading-relaxed">
+          
+          <p>
+            当サイト「フリマ利益計算機」（以下、「当ツール」といいます）は、ユーザーの個人情報の取り扱いについて、以下のとおりプライバシーポリシー（以下、「本ポリシー」といいます）を定めます。
+          </p>
           
           <section>
-            <h2 className="text-lg font-bold text-gray-800 mb-2 border-b pb-1">個人情報の利用目的</h2>
+            <h2 className="text-lg font-bold text-gray-800 mb-3 border-b pb-1">第1条（個人情報の利用目的）</h2>
             <p>
-              当サイトでは、お問い合わせの際、名前やメールアドレス等の個人情報を入力いただく場合がございます。
-              取得した個人情報は、お問い合わせに対する回答や必要な情報を電子メールなどでご連絡する場合に利用させていただくものであり、
-              これらの目的以外では利用いたしません。
+              当ツールでは、お問い合わせフォームのご利用時に、お名前やメールアドレス等の個人情報をご入力いただく場合がございます。
+              取得した個人情報は、お問い合わせに対する回答や必要な情報を電子メールなどでご連絡する場合に利用させていただくものであり、これらの目的以外では利用いたしません。
             </p>
           </section>
 
           <section>
-            <h2 className="text-lg font-bold text-gray-800 mb-2 border-b pb-1">広告について</h2>
-            <p>
-              当サイトでは、第三者配信の広告サービス（Googleアドセンスなど）を利用しており、
-              ユーザーの興味に応じた商品やサービスの広告を表示するため、クッキー（Cookie）を使用しております。
-              クッキーを使用することで当サイトはお客様のコンピュータを識別できるようになりますが、
-              お客様個人を特定できるものではありません。
-            </p>
-            <p className="mt-2">
-              Cookieを無効にする方法やGoogleアドセンスに関する詳細は
-              <a 
-                href="https://policies.google.com/technologies/ads?hl=ja" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
-              >
-                「広告 – ポリシーと規約 – Google」
-              </a>
-              をご確認ください。
-            </p>
+            <h2 className="text-lg font-bold text-gray-800 mb-3 border-b pb-1">第2条（広告配信について）</h2>
+            <div className="space-y-4">
+              <p>
+                当ツールでは、第三者配信の広告サービス（Google AdSense等）を利用しています。
+                このような広告配信事業者は、ユーザーの興味に応じた商品やサービスの広告を表示するため、当ツールや他サイトへのアクセスに関する情報「Cookie」（氏名、住所、メール アドレス、電話番号は含まれません）を使用することがあります。
+              </p>
+              <p>
+                また、Googleなどの第三者配信事業者は、Cookieを使用して、ユーザーが当ツールや他のウェブサイトに過去にアクセスした際の情報に基づいて広告を配信します。
+              </p>
+              <p>
+                ユーザーは、<a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">広告設定</a>でパーソナライズ広告を無効にすることができます。
+                または、<a href="https://www.aboutads.info/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">www.aboutads.info</a>にアクセスすれば、パーソナライズ広告に使われる第三者配信事業者のCookieを無効にすることができます。
+              </p>
+            </div>
           </section>
 
           <section>
-            <h2 className="text-lg font-bold text-gray-800 mb-2 border-b pb-1">アクセス解析ツールについて</h2>
+            <h2 className="text-lg font-bold text-gray-800 mb-3 border-b pb-1">第3条（アクセス解析ツールについて）</h2>
             <p>
-              当サイトでは、Googleによるアクセス解析ツール「Googleアナリティクス」を利用しています。
-              このGoogleアナリティクスはトラフィックデータの収集のためにクッキー（Cookie）を使用しております。
+              当ツールでは、Googleによるアクセス解析ツール「Googleアナリティクス」を利用しています。
+              このGoogleアナリティクスはトラフィックデータの収集のためにCookieを使用しています。
               このトラフィックデータは匿名で収集されており、個人を特定するものではありません。
+              この機能はCookieを無効にすることで収集を拒否することが出来ますので、お使いのブラウザの設定をご確認ください。
             </p>
           </section>
 
           <section>
-            <h2 className="text-lg font-bold text-gray-800 mb-2 border-b pb-1">免責事項</h2>
-            <p>
-              当サイトからのリンクやバナーなどで移動したサイトで提供される情報、サービス等について一切の責任を負いません。
-            </p>
-            <p className="mt-2">
-              また当サイトのコンテンツ・情報について、できる限り正確な情報を提供するように努めておりますが、
-              正確性や安全性を保証するものではありません。当サイトに掲載された内容によって生じた損害等の一切の責任を負いかねますのでご了承ください。
-            </p>
-            <p className="mt-2">
-              当サイトの計算結果はあくまで目安です。各フリマアプリの仕様変更等により、実際の利益と異なる場合があります。
-            </p>
+            <h2 className="text-lg font-bold text-gray-800 mb-3 border-b pb-1">第4条（免責事項）</h2>
+            <div className="space-y-4">
+              <p>
+                当ツールからのリンクやバナーなどで移動したサイトで提供される情報、サービス等について一切の責任を負いません。
+              </p>
+              <p>
+                また当ツールのコンテンツ・情報について、できる限り正確な情報を提供するように努めておりますが、正確性や安全性を保証するものではありません。
+                当ツールに掲載された内容によって生じた損害等の一切の責任を負いかねますのでご了承ください。
+              </p>
+              <p>
+                当ツールの計算結果は各フリマアプリの利用規約や手数料率に基づき計算しておりますが、アプリ側の仕様変更等により、実際の利益額と異なる場合があります。
+                最終的な利益額については、各アプリの公式情報をご確認ください。
+              </p>
+            </div>
           </section>
 
           <section>
-            <h2 className="text-lg font-bold text-gray-800 mb-2 border-b pb-1">著作権について</h2>
+            <h2 className="text-lg font-bold text-gray-800 mb-3 border-b pb-1">第5条（著作権について）</h2>
             <p>
-              当サイトで掲載している文章や画像などにつきましては、無断転載することを禁止します。
+              当ツールで掲載している文章や画像などにつきましては、無断転載することを禁止します。
+              当ツールはリンクフリーですが、画像への直リンクや、インラインフレームを使用したHTML内への表示はご遠慮ください。
             </p>
           </section>
+
+          <div className="pt-4 text-right text-xs text-gray-500">
+            <p>制定日：2026年1月18日</p>
+            <p>運営者：フリマ利益計算機運営事務局</p>
+          </div>
 
         </div>
       </main>
