@@ -92,7 +92,7 @@ export default function PrivacyPolicy() {
 
           <div className="pt-4 text-right text-xs text-gray-500">
             <p>制定日：2026年1月18日</p>
-            <p>運営者：フリマ利益計算機運営事務局</p>
+            <p>運営者：Axis Studio</p>
           </div>
 
         </div>

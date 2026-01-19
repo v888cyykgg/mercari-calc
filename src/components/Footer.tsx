@@ -18,7 +18,7 @@ export default function Footer() {
           </Link>
         </div>
         <p className="text-xs text-gray-300 font-light pt-2">
-          &copy; {new Date().getFullYear()} Flea Market Profit Calculator
+          &copy; {new Date().getFullYear()} Axis Studio
         </p>
       </div>
     </footer>
