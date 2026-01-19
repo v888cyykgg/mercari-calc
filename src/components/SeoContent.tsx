@@ -162,30 +162,44 @@ export default function SeoContent() {
         <p className="text-sm text-gray-600 mb-6">
           メルカリなどで「送料 節約」をするには、少しの工夫でサイズダウンさせることが有効です。
         </p>
-        <div className="grid gap-6 md:grid-cols-3">
-          <div className="bg-orange-50 rounded-xl p-5 border border-orange-100">
-            <h3 className="font-bold text-gray-800 mb-2 flex items-center gap-2">
-              <span className="text-xl">🧥</span> 圧縮テクニック
-            </h3>
-            <p className="text-sm text-gray-600 leading-relaxed">
-              冬服やぬいぐるみは空気を多く含んでいます。<strong>圧縮袋</strong>を使ってペチャンコにすれば、60サイズの荷物が宅急便コンパクト（薄型）やゆうパケットポストに入るサイズまで小さくなることも！
-            </p>
+        <div className="flex flex-col gap-4">
+          {/* 裏技1: 圧縮 */}
+          <div className="bg-orange-50 rounded-xl p-5 border border-orange-100 flex flex-col sm:flex-row gap-4 items-start">
+            <div className="flex-shrink-0 bg-white p-3 rounded-full w-12 h-12 flex items-center justify-center shadow-sm">
+              <span className="text-2xl">🧥</span>
+            </div>
+            <div>
+              <h3 className="font-bold text-gray-800 mb-1 text-lg">圧縮テクニック</h3>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                冬服やぬいぐるみは空気を多く含んでいます。<strong>圧縮袋</strong>を使ってペチャンコにすれば、60サイズの荷物が宅急便コンパクト（薄型）やゆうパケットポストに入るサイズまで小さくなることも！
+              </p>
+            </div>
           </div>
-          <div className="bg-blue-50 rounded-xl p-5 border border-blue-100">
-            <h3 className="font-bold text-gray-800 mb-2 flex items-center gap-2">
-              <span className="text-xl">📦</span> 箱の加工
-            </h3>
-            <p className="text-sm text-gray-600 leading-relaxed">
-              通販のダンボールをそのまま使うのはNG！中身に合わせてカッターで四隅に切り込みを入れ、<strong>高さを低く折りたたむ</strong>ことでサイズダウン（60サイズ化など）でき、数百円の節約になります。
-            </p>
+
+          {/* 裏技2: 箱加工 */}
+          <div className="bg-blue-50 rounded-xl p-5 border border-blue-100 flex flex-col sm:flex-row gap-4 items-start">
+            <div className="flex-shrink-0 bg-white p-3 rounded-full w-12 h-12 flex items-center justify-center shadow-sm">
+              <span className="text-2xl">📦</span>
+            </div>
+            <div>
+              <h3 className="font-bold text-gray-800 mb-1 text-lg">箱の加工</h3>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                通販のダンボールをそのまま使うのはNG！中身に合わせてカッターで四隅に切り込みを入れ、<strong>高さを低く折りたたむ</strong>ことでサイズダウン（60サイズ化など）でき、数百円の節約になります。
+              </p>
+            </div>
           </div>
-          <div className="bg-green-50 rounded-xl p-5 border border-green-100">
-            <h3 className="font-bold text-gray-800 mb-2 flex items-center gap-2">
-              <span className="text-xl">✉️</span> 封筒・袋の活用
-            </h3>
-            <p className="text-sm text-gray-600 leading-relaxed">
-              壊れ物でなければ、ダンボール箱よりも<strong>「厚手の紙袋」や「宅配ビニール袋」</strong>がおすすめ。箱自体の厚みや重さをカットでき、ネコポスやゆうパケットポストで送りやすくなります。
-            </p>
+
+          {/* 裏技3: 封筒活用 */}
+          <div className="bg-green-50 rounded-xl p-5 border border-green-100 flex flex-col sm:flex-row gap-4 items-start">
+            <div className="flex-shrink-0 bg-white p-3 rounded-full w-12 h-12 flex items-center justify-center shadow-sm">
+              <span className="text-2xl">✉️</span>
+            </div>
+            <div>
+              <h3 className="font-bold text-gray-800 mb-1 text-lg">封筒・袋の活用</h3>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                壊れ物でなければ、ダンボール箱よりも<strong>「厚手の紙袋」や「宅配ビニール袋」</strong>がおすすめ。箱自体の厚みや重さをカットでき、ネコポスやゆうパケットポストで送りやすくなります。
+              </p>
+            </div>
           </div>
         </div>
       </section>
