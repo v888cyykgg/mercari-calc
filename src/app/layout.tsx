@@ -6,9 +6,12 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "フリマ利益計算機 | メルカリ・ラクマ・PayPayフリマ対応",
-  description: "フリマアプリの利益計算をシンプルに。販売価格、仕入れ値、送料から利益と利益率を自動計算します。",
+  title: "メルカリ利益計算機 | 手数料・送料・純利益を自動計算【ラクマ・PayPayフリマ対応】",
+  description: "メルカリ、ラクマ、PayPayフリマ対応の利益計算ツール。販売価格と仕入れ値を入力するだけで、手数料や配送方法ごとの送料を差し引いた「本当の利益」と「利益率」を瞬時に自動計算します。出品前の価格決めや損益分岐点の確認に。",
   viewport: "width=device-width, initial-scale=1, maximum-scale=1",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
