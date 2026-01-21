@@ -26,6 +26,24 @@ export default function Home() {
           </div>
 
           <Calculator />
+
+          {/* 広告エリア: Pollet */}
+          <div className="flex justify-center my-8">
+            <a href="https://px.a8.net/svt/ejp?a8mat=4AVB45+4OHOZ6+4UHE+TT69D" rel="nofollow" target="_blank">
+              <img
+                width={300}
+                height={250}
+                alt="Pollet"
+                src="https://www22.a8.net/svt/bgt?aid=260121605283&wid=001&eno=01&mid=s00000022613005007000&mc=1"
+              />
+            </a>
+            <img
+              width={1}
+              height={1}
+              src="https://www13.a8.net/0.gif?a8mat=4AVB45+4OHOZ6+4UHE+TT69D"
+              alt=""
+            />
+          </div>
           <SeoContent />
           
         </div>
